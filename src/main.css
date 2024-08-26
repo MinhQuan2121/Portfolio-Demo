@@ -1,0 +1,158 @@
+:root {
+  /* Fonts */
+  --inika-fonts: 'Inika', sans-serif;
+  --inter-fonts: 'Inter', sans-serif;
+  /* Colors */
+  --clr-white: #ffffff;
+  --clr-black: #000000;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.inika.inika {
+  font-family: var(--inika-fonts) !important;
+  font-style: italic;
+}
+
+body {
+  font-family: var(--inter-fonts);
+  color: var(--clr-black);
+  font-style: normal;
+  height: 1000vh;
+  letter-spacing: -1px;
+}
+
+/* Setup */
+
+.navbar__menu {
+  opacity: 0;
+  visibility: hidden;
+  gap: 10px;
+  box-shadow:
+    rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  transform: translateY(-15%);
+}
+
+.navbar__menu .list-item {
+  transition: opacity ease-in-out 200ms;
+}
+
+.navbar__menu .list-item:hover {
+  opacity: 0.5;
+}
+
+.navbar__menu[aria-expanded='true'] {
+  display: grid;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.navbar__toggle {
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 0px 0px 0.5px;
+}
+
+.navbar__toggle[aria-expanded='true'] {
+  color: var(--clr-white);
+  background-color: var(--clr-black);
+}
+
+/* Reusable DIV */
+
+.container {
+  width: min(100% - 2rem, 1248px);
+  margin-inline: auto;
+}
+
+.btn {
+  background-color: var(--clr-white);
+  color: var(--clr-black);
+  border-radius: 22px;
+}
+
+/* No tailwind */
+
+.author-image-wrapper div img {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  z-index: 2;
+}
+
+.author-border {
+  position: absolute;
+  width: 68px;
+  aspect-ratio: 1;
+  background: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+  border-radius: 100%;
+}
+
+.wave {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+.hero__title {
+  background: linear-gradient(
+      270deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.2) 35.5%,
+      rgba(255, 255, 255, 0.2) 63.5%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    #000000;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+/* Animation */
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Media */
+
+@media screen and (max-width: 1280px) {
+  .hero__content {
+    gap: 34px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+}

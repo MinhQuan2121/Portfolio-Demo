@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuanMinh · Portfolio</title>
+    <!-- CSS Link -->
+    <link href="/src/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/main.css" />
+
+    <!-- Fonts Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fonts Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header bg-background rounded-b-[5rem] min-h-[640px] pb-[5rem] border border-gray-200">
+        <!-- Navigation -->
+        <nav class="header__navbar flex items-center justify-between px-[30px] py-[18px] relative">
+          <div class="navbar__section">
+            <div class="navbar__section-wrapper flex items-center gap-4">
+              <div class="available px-[16px] py-[10px] bg-white rounded-full font-bold cursor-pointer">
+                <span class="line-through">AVAILABLE TO WORK</span>
+              </div>
+              <div class="location text-body-3 cursor-default text-sm" id="local-time"></div>
+            </div>
+          </div>
+          <button
+            class="navbar__toggle bg-white w-[44px] h-[44px] rounded-full fixed right-[18px] transition-colors ease-linear duration-100"
+            aria-expanded="false"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <ul
+            class="navbar__menu bg-white fixed top-[5rem] right-[18px] p-8 rounded-md font-semibold transition-all ease-in-out duration-100"
+            aria-expanded="false"
+          >
+            <li class="list-item"><a href="#" class="list-link font-bold">Home</a></li>
+            <li class="list-item"><a href="#" class="list-link font-bold">About</a></li>
+            <li class="list-item"><a href="#" class="list-link font-bold">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- HeroPage -->
+        <section class="hero section" id="hero">
+          <div class="container">
+            <div class="hero__author pt-[80px] grid grid-cols-2 w-fit">
+              <div class="author-image-wrapper">
+                <div class="relative">
+                  <img
+                    width="60"
+                    height="60"
+                    src="./image/catalog/user/file-WyS7s76C7-transformed.png"
+                    alt="Author"
+                    class="author-image rounded-full"
+                  />
+                  <div class="author-border"></div>
+                </div>
+              </div>
+              <div class="author-name-wrapper relative top-[35%] left-[-30%]">
+                <div class="bg-white w-fit font-bold tracking-[-1px] px-[14px] py-[8px] rounded-[22px]">
+                  Minh Quan <span class="wave">👋🏼</span>
+                </div>
+              </div>
+            </div>
+            <div class="hero__content mt-20 flex justify-between items-end">
+              <h1 class="hero__title text-[96px] font-semibold leading-[100px] tracking-[-4px]">
+                Building digital <br />
+                products, brands, and <br />
+                experience.
+              </h1>
+              <div class="hero__information grid gap-2">
+                <a href="#" class="btn px-4 py-2 font-bold text-center">Get In Touch</a>
+                <div class="information grid grid-rows-3 space-y-[-2px] font-semibold tracking-[-1px]">
+                  <a href="mailto: qdang5474@gmail.com">qdang5474@gmail.com</a>
+                  <a href="tel: +84979502084">(+84)979502084</a>
+                  <div class="social-media">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Telegram</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </header>
+      <main>
+        <section class="about section" id="about">
+          <div class="container"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./index.js"></script>
+    <script src="./js/catalog/location.js"></script>
+    <script src="./js/catalog/navbartoggle.js"></script>
+  </body>
+</html>
