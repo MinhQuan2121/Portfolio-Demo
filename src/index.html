@@ -47,13 +47,13 @@
             class="navbar__menu bg-white fixed top-[5rem] right-[18px] p-8 rounded-md font-semibold transition-all ease-in-out duration-100"
             aria-expanded="false"
           >
-            <li class="list-item"><a href="#" class="list-link font-bold">Home</a></li>
-            <li class="list-item"><a href="#" class="list-link font-bold">About</a></li>
-            <li class="list-item"><a href="#" class="list-link font-bold">Contact</a></li>
+            <li class="list-item"><a href="#" class="link list-link font-bold">Home</a></li>
+            <li class="list-item"><a href="#" class="link list-link font-bold">About</a></li>
+            <li class="list-item"><a href="#" class="link list-link font-bold">Contact</a></li>
           </ul>
         </nav>
         <!-- HeroPage -->
-        <section class="hero section" id="hero">
+        <section class="hero" id="hero">
           <div class="container">
             <div class="hero__author pt-[80px] grid grid-cols-2 w-fit">
               <div class="author-image-wrapper">
@@ -81,7 +81,17 @@
                 experience.
               </h1>
               <div class="hero__information grid gap-2">
-                <a href="#" class="btn px-4 py-2 font-bold text-center">Get In Touch</a>
+                <a href="#" class="btn px-4 py-2 font-bold text-center flex items-center justify-center gap-2">
+                  <div>Get In Touch</div>
+                  <div>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M11.4629 1.00584V9.13084C11.4629 9.25516 11.4135 9.37439 11.3256 9.4623C11.2377 9.55021 11.1185 9.59959 10.9942 9.59959C10.8698 9.59959 10.7506 9.55021 10.6627 9.4623C10.5748 9.37439 10.5254 9.25516 10.5254 9.13084V2.13709L1.32542 11.3371C1.23656 11.4199 1.11903 11.465 0.99759 11.4628C0.876152 11.4607 0.760286 11.4115 0.674403 11.3256C0.58852 11.2397 0.539325 11.1239 0.537182 11.0024C0.53504 10.881 0.580117 10.7635 0.662917 10.6746L9.86292 1.47459H2.86917C2.74485 1.47459 2.62562 1.42521 2.53771 1.3373C2.4498 1.24939 2.40042 1.13016 2.40042 1.00584C2.40042 0.881524 2.4498 0.762295 2.53771 0.674388C2.62562 0.58648 2.74485 0.537094 2.86917 0.537094H10.9942C11.1185 0.537094 11.2377 0.58648 11.3256 0.674388C11.4135 0.762295 11.4629 0.881524 11.4629 1.00584Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </div>
+                </a>
                 <div class="information grid grid-rows-3 space-y-[-2px] font-semibold tracking-[-1px]">
                   <a href="mailto: qdang5474@gmail.com">qdang5474@gmail.com</a>
                   <a href="tel: +84979502084">(+84)979502084</a>
@@ -98,8 +108,38 @@
       </header>
       <main>
         <section class="about section" id="about">
-          <div class="container"></div>
+          <div class="container grid grid-cols-2">
+            <div class="container-column flex flex-col justify-between">
+              <div>
+                <h2 class="about__title text-heading-h2 font-semibold">Dang Minh Quan</h2>
+              </div>
+              <div>
+                <a
+                  href="#"
+                  class="btn btn--contast px-8 py-2 font-bold text-center flex items-center justify-center gap-2 w-fit"
+                >
+                  <div>More About Me</div>
+                  <div>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M11.4629 1.00584V9.13084C11.4629 9.25516 11.4135 9.37439 11.3256 9.4623C11.2377 9.55021 11.1185 9.59959 10.9942 9.59959C10.8698 9.59959 10.7506 9.55021 10.6627 9.4623C10.5748 9.37439 10.5254 9.25516 10.5254 9.13084V2.13709L1.32542 11.3371C1.23656 11.4199 1.11903 11.465 0.99759 11.4628C0.876152 11.4607 0.760286 11.4115 0.674403 11.3256C0.58852 11.2397 0.539325 11.1239 0.537182 11.0024C0.53504 10.881 0.580117 10.7635 0.662917 10.6746L9.86292 1.47459H2.86917C2.74485 1.47459 2.62562 1.42521 2.53771 1.3373C2.4498 1.24939 2.40042 1.13016 2.40042 1.00584C2.40042 0.881524 2.4498 0.762295 2.53771 0.674388C2.62562 0.58648 2.74485 0.537094 2.86917 0.537094H10.9942C11.1185 0.537094 11.2377 0.58648 11.3256 0.674388C11.4135 0.762295 11.4629 0.881524 11.4629 1.00584Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="container-column">
+              <div class="text-body-1 leading-[34px]">
+                My name is Punit Kumar Bhesota, just another software developer and this is my home on the internet. I
+                design, develop and create websites and apps. Speaking of credentials, I've got a shiny Bachelors of
+                Computer Applications degree in my back pocket.I've got a soft spot for acting.
+              </div>
+            </div>
+          </div>
         </section>
+        <section class="service section" id="service"></section>
       </main>
     </div>
 

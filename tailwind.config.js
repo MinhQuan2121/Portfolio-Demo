@@ -6,8 +6,8 @@ module.exports = {
       fontSize: {
         'heading-h1': '56px',
         'heading-h2': '48px',
-        'heading-h3': '24px',
-        'body-1': '18px',
+        'heading-h3': '36px',
+        'body-1': '28px',
         'body-2': '16px',
         'body-3': '14px',
       },
