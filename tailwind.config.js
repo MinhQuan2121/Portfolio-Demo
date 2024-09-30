@@ -8,8 +8,9 @@ module.exports = {
         'heading-h2': '48px',
         'heading-h3': '36px',
         'body-1': '28px',
-        'body-2': '16px',
-        'body-3': '14px',
+        'body-2': '18px',
+        'body-3': '16px',
+        'body-4': '14px',
       },
       backgroundImage: {
         'linear-primary': 'linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%)',
@@ -19,6 +20,7 @@ module.exports = {
       },
       colors: {
         background: '#eeeeee',
+        highlight: '#96e6a1',
       },
     },
   },
