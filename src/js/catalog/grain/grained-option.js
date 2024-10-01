@@ -12,4 +12,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Initialize Grained with the container ID and options
   grained('#header', options);
+  grained('#service', options);
 });

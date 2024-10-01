@@ -8,7 +8,6 @@
     <!-- CSS Link -->
     <link href="/src/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="/src/main.css" />
-    <link rel="stylesheet" href="./assets/fonts/fonts.css" />
 
     <!-- Fonts Family -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,7 +28,7 @@
   <body>
     <div class="app">
       <header
-        class="header rounded-b-[2rem] sm:rounded-b-[5rem] min-h-[640px] pb-[2rem] sm:pb-[5rem] border border-gray-300"
+        class="header rounded-b-[2rem] sm:rounded-b-[5rem] min-h-[640px] pb-[2rem] sm:pb-[6rem] border border-gray-300"
         id="header"
       >
         <!-- Navigation -->
@@ -52,9 +51,9 @@
             class="navbar__menu bg-white space-y-10 lg:space-y-2 fixed z-10 h-full top-0 right-0 p-8 pt-24 pr-12 text-6xl font-semibold lg:text-3xl transition-all ease-in-out duration-100 lg:top-[5rem] lg:right-[18px] lg:pt-8 lg:pr-8 lg:rounded-md lg:h-auto"
             aria-expanded="false"
           >
-            <li class="list-item"><a href="#" class="link list-link font-bold">Home</a></li>
+            <li class="list-item"><a href="#hero" class="link list-link font-bold">Home</a></li>
             <li class="list-item"><a href="#" class="link list-link font-bold">About</a></li>
-            <li class="list-item"><a href="#" class="link list-link font-bold">Contact</a></li>
+            <li class="list-item"><a href="#contact" class="link list-link font-bold">Contact</a></li>
           </ul>
         </nav>
         <!-- HeroPage -->
@@ -74,7 +73,7 @@
                 </div>
               </div>
               <div class="author-name-wrapper relative top-[35%] left-[-30%]">
-                <div class="bg-white w-fit font-bold tracking-[-1px] px-[14px] py-[8px] rounded-[22px]">
+                <div class="bg-white w-fit font-bold tracking-[-1px] px-[14px] py-[8px] rounded-[22px] shadow-custom">
                   Minh Quan <span class="wave">👋🏼</span>
                 </div>
               </div>
@@ -100,12 +99,12 @@
                   </div>
                 </a>
                 <div class="information grid grid-rows-3 space-y-[-2px] font-semibold tracking-[-1px]">
-                  <a href="mailto: qdang5474@gmail.com">qdang5474@gmail.com</a>
-                  <a href="tel: +84979502084">(+84)979502084</a>
+                  <a class="link" href="mailto: qdang5474@gmail.com">qdang5474@gmail.com</a>
+                  <a class="link" href="tel: +84979502084">(+84)979502084</a>
                   <div class="social-media">
-                    <a href="#">Github</a>
-                    <a href="#">Instagram</a>
-                    <a href="#">LinkedIn</a>
+                    <a class="link" href="#">Github</a>
+                    <a class="link" href="#">Instagram</a>
+                    <a class="link" href="#">LinkedIn</a>
                   </div>
                 </div>
               </div>
@@ -182,29 +181,84 @@
             </div>
           </div>
         </section>
-        <section class="service section bg-background rounded-t-[5rem] pb-[5rem] border border-gray-300" id="service">
+        <section class="service section rounded-t-[5rem] border-t border-gray-300" id="service">
           <div class="container">
             <!--  -->
             <div class="section__title">
               <div>
-                <h2
-                  class="about__title sm:text-heading-h2 text-heading-h3 font-semibold tracking-[-2px] text-center sm:text-start"
-                >
+                <h2 class="service__title sm:text-heading-h2 text-heading-h3 font-semibold tracking-[-2px]">
                   Services
                 </h2>
               </div>
+              <div class="breakpoint-line"></div>
               <div class="text-body-2 leading-[24px] sm:text-body-1 sm:leading-[34px]">
                 Collaborate with brands and agencies to create impactful results.
               </div>
             </div>
-            <div class="service__content">
-              <div class="service__card card">
-                <div class="card"></div>
+            <div class="service__content max-w-[762px] mx-auto">
+              <div class="service__card card grid grid-cols-3 gap-8 items-ce">
+                <div class="card grid gap-2">
+                  <img src="./image/design.png" alt="UX & UI" width="36px" height="36px" />
+                  <p class="text-body-2 font-semibold">UX & UI</p>
+                  <p class="text-body-4">Designing interfaces that are intuitive, efficient, and enjoyable to use.</p>
+                </div>
+                <div class="card grid gap-2">
+                  <img src="./image/app.png" alt="UX & UI" width="36px" height="36px" />
+                  <p class="text-body-2 font-semibold">Web & Mobile App</p>
+                  <p class="text-body-4">Transforming ideas into exceptional web and mobile app experiences.</p>
+                </div>
+                <div class="card grid gap-2">
+                  <img src="./image/develop.png" alt="UX & UI" width="30px" height="30px" />
+                  <p class="text-body-2 font-semibold">Development</p>
+                  <p class="text-body-4">Bringing your vision to life with the latest technology and design trends.</p>
+                </div>
               </div>
             </div>
           </div>
         </section>
+        <section class="contact section" id="contact" style="padding-block: 0 !important">
+          <div class="container">
+            <div class="section__title">
+              <img src="./image/handshake.png" alt="" class="mx-auto bg-white aspect-square rounded-full p-7" />
+              <h2 class="max-w-[600px] sm:text-heading-h2 text-heading-h3 font-semibold tracking-[-2px] mx-auto">
+                Tell me about your next project
+              </h2>
+            </div>
+            <div class="contact__content flex justify-center gap-4">
+              <a
+                href="#"
+                class="btn btn--contast px-8 py-2 font-bold text-center flex items-center justify-center gap-2 w-fit"
+              >
+                <div>
+                  <i class="fa-regular fa-envelope"></i>
+                </div>
+                <div>Email Me</div>
+              </a>
+              <a
+                href="#"
+                class="btn px-8 py-2 font-bold text-center flex items-center justify-center gap-2 w-fit border border-gray-300"
+              >
+                <div>WhatsApp</div>
+              </a>
+            </div>
+          </div>
+        </section>
       </main>
+      <footer class="footer section" id="footer">
+        <div class="container">
+          <div class="breakpoint-line"></div>
+          <nav class="footer__navbar text-body-4 flex justify-between">
+            <p class="">© 2024 All rights reserved.</p>
+            <div class="social-media space-x-2">
+              <a class="link" href="#">Github</a>
+              <span style="color: #242424">/</span>
+              <a class="link" href="#">Instagram</a>
+              <span style="color: #242424">/</span>
+              <a class="link" href="#">LinkedIn</a>
+            </div>
+          </nav>
+        </div>
+      </footer>
     </div>
 
     <script type="module" src="./app.js"></script>

@@ -12,6 +12,9 @@ module.exports = {
         'body-3': '16px',
         'body-4': '14px',
       },
+      boxShadow: {
+        custom: '0px 7px 29px rgba(100, 100, 111, 0.2)', // Your custom shadow
+      },
       backgroundImage: {
         'linear-primary': 'linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%)',
       },

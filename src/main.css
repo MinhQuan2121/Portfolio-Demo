@@ -1,7 +1,7 @@
 :root {
   /* Fonts */
   --inika-fonts: 'Inika', sans-serif;
-  --inter-fonts: 'Otterco Display', sans-serif;
+  --inter-fonts: 'Inter', sans-serif;
   /* Colors */
   --clr-white: #ffffff;
   --clr-black: #242424;
@@ -26,7 +26,6 @@ body {
   font-family: var(--inter-fonts);
   color: var(--clr-black);
   font-style: normal;
-  height: 1000vh;
   letter-spacing: -1px;
 }
 
@@ -60,12 +59,23 @@ body {
 /* Reusable DIV */
 
 .section {
-  padding: 68px 0;
+  padding: 6rem 0;
 }
 
 .section__title {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section__title img {
+  background-image: linear-gradient(to top, hsla(0, 0%, 100%, 0.884), hsla(0, 0%, 96%, 0.945));
+}
+
+.breakpoint-line {
+  background: rgba(236, 236, 236, 0.7);
+  width: 100%;
+  height: 1px;
+  margin: 1rem 0 2rem;
 }
 
 .container {
@@ -82,6 +92,7 @@ body {
   color: var(--clr-black);
   border-radius: 22px;
   font-size: 16px;
+  width: fit-content;
 }
 
 .btn.btn--contast {
@@ -120,14 +131,12 @@ body {
 }
 
 .hero__title,
-.about__title {
-  background-image: linear-gradient(
-    97.0286deg,
-    rgb(11, 11, 11) 0%,
-    rgba(12, 12, 12, 0.55) 100%,
-    rgba(12, 12, 12, 0.55) 100%
-  );
-  background-clip: text;
+.about__title,
+.section__title {
+  background-image: linear-gradient(96.0843deg, rgb(12, 12, 12) 0%, rgba(12, 12, 12, 0.55) 100%);
+  -webkit-background-clip: text; /* WebKit-based browsers (Chrome, Safari) */
+  background-clip: text; /* Standard background-clip */
+  color: transparent; /* Ensure the text color is transparent to show the gradient */
 }
 
 /* Animation */
@@ -174,4 +183,23 @@ body {
 
 #hero > * {
   position: relative; /* This ensures contents are on top of the grain effect */
+}
+
+.service {
+  padding-bottom: 12rem;
+}
+
+.service::after {
+  content: '';
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 6rem;
+  border-top-right-radius: 5rem;
+  border-top-left-radius: 5rem;
+  border-top: 1px;
+  border-style: solid;
+  border-color: #d1d5db;
 }
