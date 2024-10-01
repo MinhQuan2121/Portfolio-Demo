@@ -1,7 +1,7 @@
 :root {
   /* Fonts */
   --inika-fonts: 'Inika', sans-serif;
-  --inter-fonts: 'Inter', sans-serif;
+  --inter-fonts: 'Otterco Display', sans-serif;
   /* Colors */
   --clr-white: #ffffff;
   --clr-black: #242424;
@@ -63,9 +63,18 @@ body {
   padding: 68px 0;
 }
 
+.section__title {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .container {
   width: min(100% - 2rem, 1248px);
   margin-inline: auto;
+}
+
+.card {
+  display: grid;
 }
 
 .btn {

@@ -1,0 +1,224 @@
+@font-face {
+  font-family: 'Otterco';
+  src: url('./otterco_fonts/Otterco-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Otterco';
+  src: url('./otterco_fonts/Otterco-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Otterco';
+  src: url('./otterco_fonts/Otterco-BoldItalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Otterco';
+  src: url('./otterco_fonts/Otterco-ExtraBold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Otterco';
+  src: url('./otterco_fonts/Otterco-ExtraBoldItalic.otf') format('opentype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Otterco';
+  src: url('./otterco_fonts/Otterco-ExtraLight.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Otterco';
+  src: url('./otterco_fonts/Otterco-ExtraLightItalic.otf') format('opentype');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Otterco';
+  src: url('./otterco_fonts/Otterco-Italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Otterco';
+  src: url('./otterco_fonts/Otterco-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Otterco';
+  src: url('./otterco_fonts/Otterco-LightItalic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Otterco';
+  src: url('./otterco_fonts/Otterco-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Otterco';
+  src: url('./otterco_fonts/Otterco-MediumItalic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Otterco';
+  src: url('./otterco_fonts/Otterco-SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Otterco';
+  src: url('./otterco_fonts/Otterco-SemiBoldItalic.otf') format('opentype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Otterco';
+  src: url('./otterco_fonts/Otterco-Thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Otterco';
+  src: url('./otterco_fonts/Otterco-ThinItalic.otf') format('opentype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+/* Display Fonts */
+@font-face {
+  font-family: 'Otterco Display';
+  src: url('./otterco_fonts/OttercoDisplay-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Otterco Display';
+  src: url('./otterco_fonts/OttercoDisplay-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Otterco Display';
+  src: url('./otterco_fonts/OttercoDisplay-BoldItalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Otterco Display';
+  src: url('./otterco_fonts/OttercoDisplay-ExtraBold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Otterco Display';
+  src: url('./otterco_fonts/OttercoDisplay-ExtraBoldItalic.otf') format('opentype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Otterco Display';
+  src: url('./otterco_fonts/OttercoDisplay-ExtraLight.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Otterco Display';
+  src: url('./otterco_fonts/OttercoDisplay-ExtraLightItalic.otf') format('opentype');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Otterco Display';
+  src: url('./otterco_fonts/OttercoDisplay-Italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Otterco Display';
+  src: url('./otterco_fonts/OttercoDisplay-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Otterco Display';
+  src: url('./otterco_fonts/OttercoDisplay-LightItalic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Otterco Display';
+  src: url('./otterco_fonts/OttercoDisplay-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Otterco Display';
+  src: url('./otterco_fonts/OttercoDisplay-MediumItalic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Otterco Display';
+  src: url('./otterco_fonts/OttercoDisplay-SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Otterco Display';
+  src: url('./otterco_fonts/OttercoDisplay-SemiBoldItalic.otf') format('opentype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Otterco Display';
+  src: url('./otterco_fonts/OttercoDisplay-Thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Otterco Display';
+  src: url('./otterco_fonts/OttercoDisplay-ThinItalic.otf') format('opentype');
+  font-weight: 100;
+  font-style: italic;
+}
