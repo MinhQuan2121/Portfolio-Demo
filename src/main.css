@@ -22,6 +22,10 @@
   font-style: italic;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--inter-fonts);
   color: var(--clr-black);
